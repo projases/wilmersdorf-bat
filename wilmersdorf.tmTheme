@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>name</key>
+  <string>Wilmersdorf</string>
+  <key>settings</key>
+  <array>
+
+    <!-- ── Global ─────────────────────────────────────────────────────── -->
+    <dict>
+      <key>settings</key>
+      <dict>
+        <key>background</key>       <string>#282b33</string>  <!-- mSurface / bg1 -->
+        <key>foreground</key>       <string>#d3d3d3</string>  <!-- mOnHover / fg0 -->
+        <key>caret</key>            <string>#90a6db</string>  <!-- mPrimary -->
+        <key>lineHighlight</key>    <string>#34373e</string>  <!-- mHover / bg2 -->
+        <key>selection</key>        <string>#34373e</string>  <!-- mHover / bg2 -->
+        <key>selectionBorder</key>  <string>#41454b</string>  <!-- mOutline / bg3 -->
+        <key>invisibles</key>       <string>#41454b</string>  <!-- mOutline / bg3 -->
+        <key>gutterForeground</key> <string>#6e7899</string>  <!-- mOnSurfaceVariant / comment -->
+      </dict>
+    </dict>
+
+    <!-- ── Comments ───────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Comment</string>
+      <key>scope</key><string>comment, punctuation.definition.comment</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key><string>#6e7899</string>  <!-- mOnSurfaceVariant -->
+        <key>fontStyle</key><string>italic</string>
+      </dict>
+    </dict>
+
+    <!-- ── Keywords ───────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Keyword</string>
+      <key>scope</key><string>keyword, keyword.control, keyword.operator, storage, storage.type, storage.modifier</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#90a6db</string></dict>  <!-- mPrimary -->
+    </dict>
+
+    <!-- ── Strings ────────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>String</string>
+      <key>scope</key><string>string, string.quoted, string.template</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>  <!-- mSecondary / teal -->
+    </dict>
+
+    <!-- ── String escapes / interpolation ────────────────────────────── -->
+    <dict>
+      <key>name</key><string>String Escape</string>
+      <key>scope</key><string>constant.character.escape, punctuation.definition.template-expression</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#b0a2e7</string></dict>  <!-- mTertiary / magenta -->
+    </dict>
+
+    <!-- ── Numbers ────────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Number</string>
+      <key>scope</key><string>constant.numeric</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#b0a2e7</string></dict>  <!-- mTertiary -->
+    </dict>
+
+    <!-- ── Constants ──────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Constant</string>
+      <key>scope</key><string>constant, constant.language, constant.other</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#b0a2e7</string></dict>  <!-- mTertiary -->
+    </dict>
+
+    <!-- ── Functions ──────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Function name</string>
+      <key>scope</key><string>entity.name.function, meta.function-call, support.function</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#90a6db</string></dict>  <!-- mPrimary -->
+    </dict>
+
+    <!-- ── Types / Classes ────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Type / Class</string>
+      <key>scope</key><string>entity.name.type, entity.name.class, support.type, support.class</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>  <!-- mSecondary / teal -->
+    </dict>
+
+    <!-- ── Inherited class ────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Inherited class</string>
+      <key>scope</key><string>entity.other.inherited-class</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>
+    </dict>
+
+    <!-- ── Variables ──────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Variable</string>
+      <key>scope</key><string>variable, variable.other, variable.parameter</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#ababab</string></dict>  <!-- mOnSurface / fg2 -->
+    </dict>
+
+    <!-- ── Variable — language (self, this, etc.) ─────────────────────── -->
+    <dict>
+      <key>name</key><string>Variable — language</string>
+      <key>scope</key><string>variable.language</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#90a6db</string></dict>  <!-- mPrimary -->
+    </dict>
+
+    <!-- ── Punctuation ────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Punctuation</string>
+      <key>scope</key><string>punctuation, punctuation.separator, punctuation.terminator, punctuation.accessor</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#ababab</string></dict>  <!-- mOnSurface -->
+    </dict>
+
+    <!-- ── Brackets / Braces ──────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Brackets</string>
+      <key>scope</key><string>punctuation.definition.parameters, punctuation.section, meta.brace</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#d3d3d3</string></dict>  <!-- mOnHover / fg0 -->
+    </dict>
+
+    <!-- ── Tags (HTML/XML) ────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Tag name</string>
+      <key>scope</key><string>entity.name.tag</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#90a6db</string></dict>  <!-- mPrimary -->
+    </dict>
+    <dict>
+      <key>name</key><string>Tag attribute</string>
+      <key>scope</key><string>entity.other.attribute-name</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>  <!-- mSecondary -->
+    </dict>
+
+    <!-- ── Operators ──────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Operator</string>
+      <key>scope</key><string>keyword.operator.arithmetic, keyword.operator.logical, keyword.operator.comparison, keyword.operator.assignment</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#90a6db</string></dict>  <!-- mPrimary -->
+    </dict>
+
+    <!-- ── Imports / Namespace ────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Import / Namespace</string>
+      <key>scope</key><string>keyword.control.import, keyword.control.export, entity.name.namespace, support.other.namespace</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#b0a2e7</string></dict>  <!-- mTertiary -->
+    </dict>
+
+    <!-- ── Decorators / Annotations ───────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Decorator / Annotation</string>
+      <key>scope</key><string>meta.decorator, entity.name.function.decorator, punctuation.definition.annotation</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#b0a2e7</string></dict>  <!-- mTertiary -->
+    </dict>
+
+    <!-- ── Invalid / Error ────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Invalid</string>
+      <key>scope</key><string>invalid, invalid.illegal</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key><string>#e1c1ee</string>  <!-- mError -->
+        <key>fontStyle</key><string>underline</string>
+      </dict>
+    </dict>
+
+    <!-- ── Deprecated ─────────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Deprecated</string>
+      <key>scope</key><string>invalid.deprecated</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key><string>#e1c1ee</string>  <!-- mError -->
+        <key>fontStyle</key><string>italic underline</string>
+      </dict>
+    </dict>
+
+    <!-- ── Markdown: headings ─────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Markdown heading</string>
+      <key>scope</key><string>markup.heading, entity.name.section</string>
+      <key>settings</key>
+      <dict>
+        <key>foreground</key><string>#90a6db</string>
+        <key>fontStyle</key><string>bold</string>
+      </dict>
+    </dict>
+
+    <!-- ── Markdown: bold / italic ────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Markdown bold</string>
+      <key>scope</key><string>markup.bold</string>
+      <key>settings</key>
+      <dict><key>fontStyle</key><string>bold</string></dict>
+    </dict>
+    <dict>
+      <key>name</key><string>Markdown italic</string>
+      <key>scope</key><string>markup.italic</string>
+      <key>settings</key>
+      <dict><key>fontStyle</key><string>italic</string></dict>
+    </dict>
+
+    <!-- ── Markdown: inline code ──────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Markdown inline code</string>
+      <key>scope</key><string>markup.inline.raw, markup.raw.inline</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>  <!-- mSecondary -->
+    </dict>
+
+    <!-- ── Markdown: link ─────────────────────────────────────────────── -->
+    <dict>
+      <key>name</key><string>Markdown link</string>
+      <key>scope</key><string>markup.underline.link, string.other.link</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>
+    </dict>
+
+    <!-- ── Diff: inserted / deleted / changed ────────────────────────── -->
+    <dict>
+      <key>name</key><string>Diff inserted</string>
+      <key>scope</key><string>markup.inserted</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#5b94ab</string></dict>
+    </dict>
+    <dict>
+      <key>name</key><string>Diff deleted</string>
+      <key>scope</key><string>markup.deleted</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#e1c1ee</string></dict>
+    </dict>
+    <dict>
+      <key>name</key><string>Diff changed</string>
+      <key>scope</key><string>markup.changed</string>
+      <key>settings</key>
+      <dict><key>foreground</key><string>#b0a2e7</string></dict>
+    </dict>
+
+  </array>
+</dict>
+</plist>
